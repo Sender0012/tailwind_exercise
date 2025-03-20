@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Jekyll Site</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> Include Tailwind CSS -->
+    <link href="{{ 'assets/css/build.css' | relative_url }}" rel="stylesheet">
+</head>
+<body class="p-5 bg-gray-100">
+
+    <!-- Three texts with different colors -->
+    <p class="text-red-500">This is red text.</p>
+    <p class="text-green-500">This is green text.</p>
+    <p class="text-yellow-500">This is yellow text.</p>
+
+    <!-- Sections with different colors and shadow effects -->
+    <div class="p-5 mb-4 bg-sky-500 text-white shadow-lg rounded-lg relative overflow-hidden">
+        <span class="absolute inset-0 rounded-lg bg-sky-500 opacity-50 animate-ping"></span>
+        <p>This section has a **blue background** (sky-500) and a **large shadow (shadow-lg)** with an **animate-ping effect**.</p>
+    </div>
+
+    <div class="p-5 mb-4 bg-green-500 text-white shadow-xl rounded-lg">
+        <p>This section has a **green background** (green-500) and an **extra-large shadow (shadow-xl)**.</p>
+    </div>
+
+    <div class="p-5 mb-4 bg-yellow-500 text-black shadow-2xl rounded-lg">
+        <p>This section has a **yellow background** (yellow-500) and a **double extra-large shadow (shadow-2xl)**.</p>
+    </div>
+
+    <!-- Table with table-auto class -->
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full border-collapse border border-gray-300 shadow-md rounded-lg">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="border border-gray-400 px-4 py-2">Name</th>
+                    <th class="border border-gray-400 px-4 py-2">Age</th>
+                    <th class="border border-gray-400 px-4 py-2">City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white">
+                    <td class="border border-gray-400 px-4 py-2">Alice</td>
+                    <td class="border border-gray-400 px-4 py-2">25</td>
+                    <td class="border border-gray-400 px-4 py-2">New York</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="border border-gray-400 px-4 py-2">Bob</td>
+                    <td class="border border-gray-400 px-4 py-2">30</td>
+                    <td class="border border-gray-400 px-4 py-2">Los Angeles</td>
+                </tr>
+                <tr class="bg-white">
+                    <td class="border border-gray-400 px-4 py-2">Charlie</td>
+                    <td class="border border-gray-400 px-4 py-2">22</td>
+                    <td class="border border-gray-400 px-4 py-2">Chicago</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Two links with text-sky-500 color -->
+    <a href="https://example.com" class="text-sky-500 underline">First Link</a><br>
+    <a href="https://example.com" class="text-sky-500 underline">Second Link</a>
+    
+        <!-- Demonstracja flex-row (elementy w jednym wierszu) -->
+    <div class="flex flex-row space-x-4 p-5 bg-blue-300 shadow-md rounded-lg mb-6">
+        <div class="p-4 bg-red-500 text-white rounded-lg flex-auto">Item 1</div>
+        <div class="p-4 bg-green-500 text-white rounded-lg">Item 2  dfasdfosnfjsadnfkjlsdakjfjsfjk no flex-none</div>
+        <div class="p-4 bg-yellow-500 text-black rounded-lg flex-auto">Item 3</div>
+    </div>
+
+    <!-- Demonstracja flex-col (elementy w jednej kolumnie) -->
+    <div class="flex flex-col space-y-4 p-5 bg-purple-300 shadow-md rounded-lg">
+        <div class="p-4 bg-red-500 text-white rounded-lg">Item 1</div>
+        <div class="p-4 bg-green-500 text-white rounded-lg">Item 2</div>
+        <div class="p-4 bg-yellow-500 text-black rounded-lg">Item 3</div>
+    </div>
+
+     <!-- Kontener flex z użyciem flex-row, o mniejszej szerokości -->
+     <div class="container flex flex-row space-x-4 p-5 bg-blue-300 shadow-md rounded-lg mb-6">
+        <div class="p-4 bg-red-500 text-white rounded-lg flex-auto">
+            Item 1 (flex-auto)
+        </div>
+        <div class="p-4 bg-green-500 text-white rounded-lg flex-none">
+            Item 2  dfasdfosnfjsadnfkjlsdakjfjsfjk with flex-none
+        </div>
+        <div class="p-4 bg-yellow-500 text-black rounded-lg flex-auto">
+            Item 3 (flex-auto)
+        </div>
+    </div>
+
+</body>
+</html>

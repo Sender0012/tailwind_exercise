@@ -1,0 +1,104 @@
+/* Import TailwindCSS utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Classes */
+
+/* Text Colors */
+.text-red { 
+  @apply text-red-500; 
+}
+.text-green { 
+  @apply text-green-500; 
+}
+.text-yellow { 
+  @apply text-yellow-500; 
+}
+
+/* Section Styles */
+.section-box {
+  @apply p-5 mb-4 text-white rounded-lg shadow-lg;
+}
+
+.bg-sky {
+  @apply bg-sky-500;
+}
+
+.bg-green {
+  @apply bg-green-500;
+}
+
+.bg-yellow {
+  @apply bg-yellow-500 text-black;
+}
+
+/* Animated Box */
+.animated-box {
+  @apply relative overflow-hidden;
+}
+
+.animated-box::before {
+  @apply absolute inset-0 rounded-lg bg-sky-500 opacity-50 animate-ping;
+  content: "";
+}
+
+/* Table Styles */
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.custom-table {
+  @apply table-auto w-full border-collapse border border-gray-300 shadow-md rounded-lg;
+}
+
+.custom-th {
+  @apply border border-gray-400 px-4 py-2 bg-gray-200;
+}
+
+.custom-td {
+  @apply border border-gray-400 px-4 py-2;
+}
+
+.row-white { 
+  @apply bg-white; 
+}
+
+.row-gray { 
+  @apply bg-gray-100; 
+}
+
+/* Flex Containers */
+.flex-row-box {
+  @apply flex flex-row space-x-4 p-5 shadow-md rounded-lg mb-6;
+}
+
+.flex-col-box {
+  @apply flex flex-col space-y-4 p-5 shadow-md rounded-lg;
+}
+
+.flex-item {
+  @apply p-4 text-white rounded-lg;
+}
+
+.flex-auto { 
+  @apply flex-auto; 
+}
+
+.flex-none { 
+  @apply flex-none; 
+}
+
+/* Background Colors for Flex */
+.bg-blue { 
+  @apply bg-blue-300; 
+}
+
+.bg-purple { 
+  @apply bg-purple-300; 
+}
+
+/* Link Styles */
+.link-style {
+  @apply text-sky-500 underline;
+}

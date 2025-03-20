@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Jekyll Site</title>
+    <link href="assets/css/output.css" rel="stylesheet"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Three texts with different colors -->
+    <p class="text-red">This is red text.</p>
+    <p class="text-green">This is green text.</p>
+    <p class="text-yellow">This is yellow text.</p>
+
+    <!-- Sections with different colors and shadow effects -->
+    <div class="p-5 mb-4 bg-sky text-white shadow-lg rounded-lg relative overflow-hidden">
+        <span class="absolute inset-0 rounded-lg bg-sky opacity-50 animate-ping"></span>
+        <p>This section has a **blue background** and a **large shadow** with an **animate-ping effect**.</p>
+    </div>
+
+    <div class="p-5 mb-4 bg-green text-white shadow-xl rounded-lg">
+        <p>This section has a **green background** and an **extra-large shadow**.</p>
+    </div>
+
+    <div class="p-5 mb-4 bg-yellow text-black shadow-2xl rounded-lg">
+        <p>This section has a **yellow background** and a **double extra-large shadow**.</p>
+    </div>
+
+    <!-- Table with table-auto class -->
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full border-collapse border border-gray shadow-md rounded-lg">
+            <thead class="bg-header">
+                <tr>
+                    <th class="table-th">Name</th>
+                    <th class="table-th">Age</th>
+                    <th class="table-th">City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white">
+                    <td class="table-td">Alice</td>
+                    <td class="table-td">25</td>
+                    <td class="table-td">New York</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="table-td">Bob</td>
+                    <td class="table-td">30</td>
+                    <td class="table-td">Los Angeles</td>
+                </tr>
+                <tr class="bg-white">
+                    <td class="table-td">Charlie</td>
+                    <td class="table-td">22</td>
+                    <td class="table-td">Chicago</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Two links with text-sky color -->
+    <a href="https://example.com" class="text-sky underline">First Link</a><br>
+    <a href="https://example.com" class="text-sky underline">Second Link</a>
+
+    <!-- Demonstration of flex-row (items in one row) -->
+    <div class="flex-row p-5 bg-blue-300 shadow-md rounded-lg mb-6">
+        <div class="p-4 bg-red-500 text-white rounded-lg flex-auto">Item 1</div>
+        <div class="p-4 bg-green-500 text-white rounded-lg">Item 2</div>
+        <div class="p-4 bg-yellow-500 text-black rounded-lg flex-auto">Item 3</div>
+    </div>
+
+    <!-- Demonstration of flex-col (items in one column) -->
+    <div class="flex-col p-5 bg-purple-300 shadow-md rounded-lg">
+        <div class="p-4 bg-red-500 text-white rounded-lg">Item 1</div>
+        <div class="p-4 bg-green-500 text-white rounded-lg">Item 2</div>
+        <div class="p-4 bg-yellow-500 text-black rounded-lg">Item 3</div>
+    </div>
+
+    <!-- Flex container with flex-row and smaller width -->
+    <div class="container flex-row p-5 bg-blue-300 shadow-md rounded-lg mb-6">
+        <div class="p-4 bg-red-500 text-white rounded-lg flex-auto">Item 1 (flex-auto)</div>
+        <div class="p-4 bg-green-500 text-white rounded-lg flex-none">Item 2 (flex-none)</div>
+        <div class="p-4 bg-yellow-500 text-black rounded-lg flex-auto">Item 3 (flex-auto)</div>
+    </div>
+
+</body>
+</html>
